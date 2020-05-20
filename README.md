@@ -14,15 +14,15 @@ Instructions:
 3. Install the following packages using this code at your RStudio console:
 
 install.packages('shiny')
-install.packages('shinythemes'); 
-install.packages('DT'); 
-install.packages('ggplot2'); 
-install.packages('knitr'); 
+install.packages('shinythemes')
+install.packages('DT')
+install.packages('ggplot2')
+install.packages('knitr')
 install.packages('RColorBrewer')
-install.packages('plyr'); 
-install.packages('shinycssloaders'); 
-install.packages('circlize'); 
-install.packages('dplyr'); 
+install.packages('plyr')
+install.packages('shinycssloaders')
+install.packages('circlize')
+install.packages('dplyr')
 install.packages('feather')
 
 4. If the previous step worked successfully, you are ready to run the shiny application. However,
