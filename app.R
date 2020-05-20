@@ -34,7 +34,12 @@ import_library('dplyr');
 import_library('feather')
 
 #Read file
-file <- read_feather("374_hOR_v21.feather")
+if(file.exists("374_hOR_v21_07022020.feather") == FALSE){
+  unzip("374_hOR_v21_07022020.zip")
+}
+if(file.exists("374_hOR_v21_07022020.feather") == TRUE){
+  file <- read_feather("374_hOR_v21_07022020.feather")
+}
 
 ##############################################################################################################################################################
 ##############################################################################################################################################################
@@ -113,20 +118,10 @@ ui <- navbarPage(title = ' ',
                       Data extraction and analysis have been performed using <b>Python</b> (<a target='_blank' rel='noopener noreferrer' href='https://www.python.org/'>Click</a>) and <b>R</b> 
                       (<a target='_blank' rel='noopener noreferrer' href='https://www.r-project.org/'>Click</a>) scripts. 
                       The web interface has been developed using <b>Shiny R package</b> (<a target='_blank' rel='noopener noreferrer' href='https://shiny.rstudio.com/'>Click</a>).<br><br>
-              
-                      <b><font size=3>➣ People:</font></b>  <br>
-                      • Ramon Cierco Jiménez, M.S. UVic-UCC (<a target='_blank' rel='noopener noreferrer' href='https://www.uvic.cat//'>Click</a>).<br> 
-                      • Mercedes Campillo Grau, PhD. LMC-UAB (<a target='_blank' rel='noopener noreferrer'href='http://lmc.uab.cat/'>Click</a>).<br>
-                      • Angel Gonzalez Wong, PhD. LMC-UAB (<a target='_blank' rel='noopener noreferrer'href='http://lmc.uab.cat/'>Click</a>).<br>
-                      <br>
                       
-                      <b><font size=3>➣ Contact E-Mails:</font></b> <br>
-                      • hormdbdb.contact@gmail.com <br>
-                      • ramoncierco7@gmail.com <br>
-                      • Angel.Gonzalez@uab.cat <br><br>
                       
-                      We hope you enjoy the interface and find it helpful for your analysis. <br>
-                      If you want more information about the interface, please do not hesitate to contact us!
+                      <b><font size=3>➣ GitHub:</font></b> <br>
+                      This tool can be downloaded from the <b>GitHub repository</b> (<a target='_blank' rel='noopener noreferrer' href='https://github.com/ramoncierco7/hORMdb'>https://github.com/ramoncierco7/hORMdb</a>).<br><br>
                       
                       </font>
                       </div>
@@ -174,11 +169,8 @@ ui <- navbarPage(title = ' ',
                          vertical-align: top
                          }
                          </style>
-
-                         <hr>
-
-
-                         <b><font size=3>Browser Compatibility:</font></b> <br>
+                         
+                         <b><font size=3>➣ Browser Compatibility:</font></b> <br>
 
                          <table class="tg">
                          <tr>
@@ -206,7 +198,7 @@ ui <- navbarPage(title = ' ',
                          <td class="tg-0lax">13.0</td>
                          </tr>
                          <tr>
-                         <td class="tg-cly1"></b>Windows</b></td>
+                         <td class="tg-cly1"><b>Windows</b></td>
                          <td class="tg-cly1">10</td>
                          <td class="tg-cly1">78.0.3904.108</td>
                          <td class="tg-cly1">71.0</td>
@@ -214,7 +206,20 @@ ui <- navbarPage(title = ' ',
                          <td class="tg-0lax">n/a</td>
                          </tr>
                          </table>
-                          '),                           
+                        <br>
+                        <div>
+                        <font size=3>
+                        We hope you enjoy the interface and find it helpful for your analysis. If you want more information about the interface, please do not hesitate to contact us! <br><br>
+
+                        ramoncierco7@gmail.com (Ramon Cierco Jiménez)<br>
+                        Angel.Gonzalez@uab.cat (Angel Gonzalez Wong)<br><br>
+                        
+                        Developed at <a target="_blank" rel="noopener noreferrer" href="https://www.uab.cat/">Universitat Autònoma de Barcelona</a>, <a target="_blank" rel="noopener noreferrer" href="http://lmc.uab.cat/">Laboratori de Medicina Computacional</a>. <br>
+                        
+                        </font>
+                        </div>
+                          '),    
+                    
                                                  
                                                  width = 5),
                                     
@@ -366,7 +371,7 @@ ui <- navbarPage(title = ' ',
                                                              </tr>
                                                           </table>"),
                                                           
-                                                          choices = c('ALL', as.character(sort(as.numeric(as.character(unique(file$Family)))))),selected = "ALL", multiple = TRUE),
+                                                          choices = c('ALL', as.character(sort(as.numeric(as.character(unique(file$Family)))))),selected = "1", multiple = TRUE),
                                            
                                            ####################################################################################################################################### 
                                            # DATA SOURCE FILTER   
