@@ -1,6 +1,8 @@
 # hORMdb
 
-### Welcome to Human Olfactory Receptors Mutations Database
+Welcome to Human Olfactory Receptors Mutations Database!
+
+The aim of this resource is to provide a curated searchable database of sequence variation in human Olfactory Receptors (hORs) to study the differences among individuals and populations with regard to the olfactory perception. 
 
 ### Instructions:
 
@@ -36,14 +38,14 @@ install.packages('dplyr')
 
 install.packages('feather')
 
-#### 4. If the previous step worked successfully, you are ready to run the shiny application. However,
-   there are 2 ways to do it:
+#### 4. If the previous step worked successfully, you are ready to run the shiny application. However, there are 2 ways to do it:
    
-   a) Open the file called "app.R" from the "hORMdb-master" folder using RStudio. Then, Press the button "Run App" at the right-top side of RStudio
+a) Open the file called "app.R" from the "hORMdb-master" folder using RStudio. Then, Press the button "Run App" at the right-top side of RStudio
    
-   b) Type shiny::runApp('pathwaytodirectory/hORMdb-master') in your RStudio console (Remember to replace 'pathwaytodirectory' to the directory where you have the tool folder)
+b) Type shiny::runApp('pathwaytodirectory/hORMdb-master') in your RStudio console (Remember to replace 'pathwaytodirectory' to the directory where you have the tool folder)
 
-#### 5. After the previous step, a new window from RStudio should appear. In addition, you can open the tool from your web browser using the hyperlink at the top-left side of this new tool (like 'http://100.0.0.1:5555', where 100.0.0.1 is the IP direction and 5555 the port that RStudio uses to show the tool)
+#### 5. After the previous step, a new window from RStudio should appear. 
+In addition, you can open the tool from your web browser using the hyperlink at the top-left side of this new tool (like 'http://100.0.0.1:5555', where 100.0.0.1 is the IP direction and 5555 the port that RStudio uses to show the tool)
 
 #### 6. That's all! Enjoy this tool! For further questions don't hestiate to contact me: ramoncierco7@gmail.com
 
