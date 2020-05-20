@@ -1,6 +1,6 @@
 # hORMdb
 
-Welcome to Human Olfactory Receptors Mutations Database!
+Welcome to Human Olfactory Receptors Mutations Database, a web-based interface developed using the R package called (see, https://shiny.rstudio.com/)
 
 The aim of this resource is to provide a curated searchable database of sequence variation in human Olfactory Receptors (hORs) to study the differences among individuals and populations with regard to the olfactory perception. 
 
