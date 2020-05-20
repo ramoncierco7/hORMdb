@@ -1,7 +1,7 @@
 # hORMdb
-Human Olfactory Receptors Mutations Database
+Welcome to Human Olfactory Receptors Mutations Database
 
-Instructions:
+### Instructions:
 
 1. Install R and RStudio in yout computer/laptop, check those links in case you have issues with this step:
 
