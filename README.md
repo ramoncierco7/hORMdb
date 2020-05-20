@@ -14,7 +14,9 @@ Instructions:
 3. Install the following packages using this code at your RStudio console:
 
 install.packages('shiny')
+
 install.packages('shinythemes')
+
 install.packages('DT')
 install.packages('ggplot2')
 install.packages('knitr')
