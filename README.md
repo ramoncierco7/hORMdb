@@ -17,6 +17,8 @@ Check those links in case you have issues with this step:
 #### 2. Download the tool from https://github.com/ramoncierco7/hORMdb. 
 
 Remember to decompress all the elements inside the folder.
+
+Check that the file called "374_hOR_v21_07022020.zip" is decompress into a file called "374_hOR_v21_07022020.feather"
   
 #### 3. Install the following R packages using this code at your RStudio console:
 
